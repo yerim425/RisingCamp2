@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/dialog_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="선택한 지역을 삭제하시겠습니까?"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/dialog_no"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="취소"
+        android:textSize="35dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/shape_tv_location_edge"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_txt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/dialog_yes"/>
+
+    <TextView
+        android:id="@+id/dialog_yes"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="확인"
+        android:textSize="35dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/shape_tv_set_location_round"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_txt"
+        app:layout_constraintStart_toEndOf="@+id/dialog_no"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
